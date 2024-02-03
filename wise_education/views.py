@@ -20,3 +20,6 @@ def our_team(request):
 
 def executive_board(request):
     return render(request, "board_of_advisors.html")
+
+def ongoing_projects(request):
+    return render(request, "ongoing_projects.html")

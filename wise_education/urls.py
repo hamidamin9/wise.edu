@@ -30,5 +30,6 @@ urlpatterns = [
     path("ceo_message",views.ceo_message,name="ceo_message"),
     path("our_team",views.our_team,name="our_team"),
     path("executive_board",views.executive_board,name="executive_board"),
+    path("ongoing_projects",views.ongoing_projects,name="ongoing_projects"),
     path("goverment_collaboration",views.goverment_collaboration,name="goverment_collaboration"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
