@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+
+from wise_education import settings
+
+from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-]
+    path("index",views.index),
+    path("our_alumni",views.our_alumni)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
