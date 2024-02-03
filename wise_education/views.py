@@ -23,3 +23,9 @@ def executive_board(request):
 
 def ongoing_projects(request):
     return render(request, "ongoing_projects.html")
+
+def up_coming_projects(request):
+    return render(request, "up_coming_projects.html")
+
+def Earning_center_btn(request):
+    return render(request, "Earning_center_btn.html")
