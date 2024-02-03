@@ -29,3 +29,6 @@ def up_coming_projects(request):
 
 def Earning_center_btn(request):
     return render(request, "Earning_center_btn.html")
+
+def life_at_college(request):
+    return render(request, "life_at_college.html")

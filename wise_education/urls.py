@@ -34,4 +34,5 @@ urlpatterns = [
     path("up_coming_projects",views.up_coming_projects,name="up_coming_projects"),
     path("Earning_center_btn",views.Earning_center_btn,name="Earning_center_btn"),
     path("goverment_collaboration",views.goverment_collaboration,name="goverment_collaboration"),
+    path("life_at_college",views.life_at_college,name="life_at_college"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
