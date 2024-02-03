@@ -24,6 +24,11 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("index",views.index,name="index"),
-    path("our_alumni",views.our_alumni,name="our_alumni")
+    path("",views.index,name="index"),
+    path("our_alumni",views.our_alumni,name="our_alumni"),
+    path("about_us",views.about_us,name="about_us"),
+    path("ceo_message",views.ceo_message,name="ceo_message"),
+    path("our_team",views.our_team,name="our_team"),
+    path("executive_board",views.executive_board,name="executive_board"),
+    path("goverment_collaboration",views.goverment_collaboration,name="goverment_collaboration"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
