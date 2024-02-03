@@ -652,13 +652,13 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wise.edu.pk\/wp-admin\/admin-ajax.php
 					<div class="navigation-bar flex-wrap align-items-center">
 			<nav>
 				<ul id="menu-main-menu" class=""><li id="menu-item-2288" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2288"><a href="https://wise.edu.pk/" aria-current="page">Home</a></li>
-<li id="menu-item-2289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2289"><a href="https://wise.edu.pk/about-us/">About Us</a>
+<li id="menu-item-2289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2289"><a href="{% url 'about_us' %}">About Us</a>
 <ul class="sub-menu">
 	<li id="menu-item-2647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2647"><a href="https://wise.edu.pk/about-us/#wisehistory">Wise History</a></li>
-	<li id="menu-item-2648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2648"><a href="https://wise.edu.pk/government-colloboration/">Government Colloboration</a></li>
-	<li id="menu-item-2649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2649"><a href="https://wise.edu.pk/execetive-board">Executive Board</a></li>
-	<li id="menu-item-2651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2651"><a href="https://wise.edu.pk/ceo-message/">CEO Message</a></li>
-	<li id="menu-item-2650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2650"><a href="https://wise.edu.pk/our-team/">Our Team</a></li>
+	<li id="menu-item-2648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2648"><a href="{% url 'goverment_collaboration' %}">Government Colloboration</a></li>
+	<li id="menu-item-2649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2649"><a href="{% url 'executive_board' %}">Executive Board</a></li>
+	<li id="menu-item-2651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2651"><a href="{% url 'ceo_message' %}">CEO Message</a></li>
+	<li id="menu-item-2650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2650"><a href="{% url 'our_team' %}">Our Team</a></li>
 	<li id="menu-item-2652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2652"><a href="https://wise.edu.pk/about-us/#mission">Mission</a></li>
 	<li id="menu-item-2653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2653"><a href="https://wise.edu.pk/about-us/#vission">Vission</a></li>
 	<li id="menu-item-2654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2654"><a href="https://wise.edu.pk/about-us/#objectives">Objective</a></li>
@@ -698,7 +698,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wise.edu.pk\/wp-admin\/admin-ajax.php
 			<div class="responsive-menu">
                 <div class="responsive-menu--close-area"></div>
 				<ul id="menu-main-menu-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2288"><a href="https://wise.edu.pk/" aria-current="page">Home</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2289"><a href="https://wise.edu.pk/about-us/">About Us</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2289"><a href="{% url 'about_us' %}">About Us</a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2647"><a href="https://wise.edu.pk/about-us/#wisehistory">Wise History</a></li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2648"><a href="https://wise.edu.pk/government-colloboration/">Government Colloboration</a></li>
@@ -1460,7 +1460,7 @@ object-fit: cover;
 				<div class="elementor-element elementor-element-c154f5e elementor-widget elementor-widget-elementskit-button" data-id="c154f5e" data-element_type="widget" data-widget_type="elementskit-button.default">
 				<div class="elementor-widget-container">
 			<div class="ekit-wid-con">		<div class="ekit-btn-wraper">
-							<a href="https://wise.edu.pk/about-us/" class="elementskit-btn  whitespace--normal">
+							<a href="{% url 'about_us' %}" class="elementskit-btn  whitespace--normal">
 					
 					
 					Learn More				</a>
@@ -1911,7 +1911,7 @@ object-fit: cover;
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="https://wise.edu.pk/about-us/">
+											<a href="{% url 'about_us' %}">
 
 											<span class="elementor-icon-list-text">About Us</span>
 											</a>
