@@ -32,3 +32,28 @@ def Earning_center_btn(request):
 
 def life_at_college(request):
     return render(request, "life_at_college.html")
+
+def media(request):
+    return render(request, "media.html")
+
+def loan(request):
+    return render(request, "loan.html")
+
+def events(request):
+    return render(request, "events.html")
+
+def skill_institute(request):
+    return render(request, "skill_institute.html")
+
+def college_students(request):
+    return render(request, "college_students.html")
+
+def register(request):
+    return render(request, "register.html")
+
+# def wise_history(request):
+#     return render(request, "wise_history.html")
+
+
+def education_unemployed(request):
+    return render(request, "education_unemployed.html")

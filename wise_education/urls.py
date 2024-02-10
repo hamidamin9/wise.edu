@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
+from django.conf import settings
+from django.conf.urls.static import static
 
 from wise_education import settings
 
@@ -35,4 +37,17 @@ urlpatterns = [
     path("Earning_center_btn",views.Earning_center_btn,name="Earning_center_btn"),
     path("goverment_collaboration",views.goverment_collaboration,name="goverment_collaboration"),
     path("life_at_college",views.life_at_college,name="life_at_college"),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("media",views.media,name="media"),
+    path("loan",views.loan,name="loan"),
+    path("events",views.events,name="events"),
+    path("skill_institute",views.skill_institute,name="skill_institute"),
+    path("college_students",views.college_students,name="college_students"),
+    path("education_unemployed",views.education_unemployed,name="education_unemployed"),
+    path("register",views.register,name="register"),
+    # path("wise_history",views.wise_history,name="wise_history"),
+       
+]
+
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

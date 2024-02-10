@@ -1,14 +1,18 @@
 from django.db import models
+import datetime
 
-# Create your models here.
+class Event(models.Model):
+    event_title = models.CharField(max_length=255)
+    date = models.DateField(default=datetime.date.today)
+    avatar = models.FileField(upload_to="avatars", max_length=255, null=True, default=None)
+
+
+
 
 class User(models.Model):
-    name = models.CharField(max_length=50)
-    email = models.EmailField(max_length=50)
-    address = models.TextField()
-    phone = models.IntegerField()
-    avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)  # New avatar field
+    name = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    phone = models.CharField(max_length=20)  # Adjust max_length according to your needs
+    date = models.DateField(default=datetime.date.today)
+    avatar = models.FileField(upload_to="avatars", max_length=255, null=True, default=None)
 
-
-    def __str__(self):
-        return self.name
